@@ -39,11 +39,11 @@ body {
   justify-content: space-between;
 }
 
-.header-black {
+.main .header {
   background-color: var(--color-black);
 }
 
-.header-white {
+.about .header {
   background-color: var(--color-white);
 }
 
@@ -60,15 +60,16 @@ body {
 
 .menu-line {
   position: relative;
+  z-index: 10;
 }
 
-.header-black .menu-line::before,
-.header-black .menu-line::after {
+.main .menu-line::before,
+.main .menu-line::after {
   background-color: var(--color-white);
 }
 
-.header-white .menu-line::before,
-.header-white .menu-line::after {
+.about .menu-line::before,
+.about .menu-line::after {
   background-color: var(--color-black);
 }
 
@@ -92,17 +93,28 @@ body {
 .menu-active .menu-line::before {
   top: 20px;
   transform: rotate(45deg);
+  background-color: var(--color-white);
 }
 
 .menu-active .menu-line::after {
   top: 20px;
   transform: rotate(-45deg);
+  background-color: var(--color-white);
 }
 
 .header-nav {
-  opacity: 0;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translateY(-100%);
   transition: 1s ease-in-out;
+  background-color: var(--color-black);
+  opacity: 0;
 }
 
 .header-nav-active {
@@ -129,28 +141,28 @@ body {
 
 .nav-item-link {
   text-decoration: none;
-}
-
-.header-black .nav-item-link {
   color: var(--color-white);
-}
-
-.header-white .nav-item-link {
-  color: var(--color-black);
 }
 
 .header-logo {
   display: flex;
   overflow: hidden;
+  position: relative;
+  z-index: 10;
 }
 
-.logo-white .logo-image {
+.header-nav .header-logo {
+  position: absolute;
+  right: -440px;
+}
+
+.main .logo-image {
   width: 290px;
   height: 95px;
   background-image: url(./../img/logo-desktop-white.png);
 }
 
-.logo-red .logo-image {
+.about .logo-image {
   width: 222.21px;
   height: 72.79px;
   background-image: url(./../img/logo-desktop-red.png);
