@@ -101,13 +101,13 @@ body {
   top: 23px;
 }
 
-.menu-active .menu-line::before {
+.header-active .menu-line::before {
   top: 20px;
   transform: rotate(45deg);
   background-color: var(--color-white);
 }
 
-.menu-active .menu-line::after {
+.header-active .menu-line::after {
   top: 20px;
   transform: rotate(-45deg);
   background-color: var(--color-white);
@@ -128,7 +128,7 @@ body {
   opacity: 0;
 }
 
-.header-nav-active {
+.header-active .header-nav {
   opacity: 1;
   transform: translateY(0%);
 }
@@ -162,15 +162,10 @@ body {
   z-index: 10;
 }
 
-.header-nav .header-logo {
-  position: absolute;
-  right: -440px;
-}
-
 .main .logo-image {
   width: 290px;
   height: 95px;
-  background-image: url(./../img/logo-desktop-white.png);
+  background-image: url(./../img/logo-desktop-main.png);
 }
 
 .about .logo-image {
@@ -179,6 +174,10 @@ body {
   background-image: url(./../img/logo-desktop-red.png);
   transform: translateX(78%);
   transition: ease 1s;
+}
+
+.header-active .logo-image {
+  background-image: url(./../img/logo-desktop-white.png);
 }
 
 .main {
