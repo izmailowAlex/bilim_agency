@@ -1,4 +1,15 @@
 @font-face {
+  font-family: "Resist Sans";
+  src: local("Resist Sans Display Regular"),
+    local("Resist-Sans-Display-Regular"),
+    url("./../fonts/ResistSansDisplay-Regular.woff2") format("woff2"),
+    url("./../fonts/ResistSansDisplay-Regular.woff") format("woff"),
+    url("./../fonts/ResistSansDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-weight: 400;
   font-family: "LoveLight";
   src: url(./../fonts/LoveLight-Regular.ttf);
@@ -10,7 +21,7 @@
   --color-green: #ceff00;
   --color-color: #ed1e79;
   --font-love: "LoveLight";
-  --font-arial: "Arial";
+  --font-resist: "Resist Sans";
 }
 
 * {
@@ -124,7 +135,7 @@ body {
 
 .nav-list {
   list-style: none;
-  font-family: var(--font-arial);
+  font-family: var(--font-resist);
   font-size: 32px;
   line-height: 40px;
   font-weight: 300;
@@ -184,8 +195,8 @@ body {
 }
 
 .info__title {
-  width: 620px;
-  font-family: var(--font-arial);
+  width: 600px;
+  font-family: var(--font-resist);
   font-size: 140px;
   line-height: 130px;
   font-weight: 300;
@@ -194,9 +205,9 @@ body {
 
 .info__title2 {
   margin-top: 20px;
-  font-family: var(--font-arial);
+  font-family: var(--font-resist);
   font-size: 180px;
-  line-height: 150px;
+  line-height: 170px;
   font-weight: 300;
   color: transparent;
   background-clip: text;
@@ -225,8 +236,8 @@ body {
   border: 5px solid var(--color-green);
   border-radius: 150%;
   position: absolute;
-  left: 410px;
-  bottom: 280px;
+  left: 400px;
+  bottom: 310px;
 }
 
 .info-text {
