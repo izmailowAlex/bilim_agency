@@ -457,6 +457,7 @@ body {
 }
 
 .services-list {
+  overflow: hidden;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -466,6 +467,10 @@ body {
   margin-top: auto;
   max-height: 500px;
   overflow: scroll;
+}
+
+.services-item {
+  height: 100%;
 }
 
 .services-list-white .services-item:nth-child(n + 2) {
@@ -495,9 +500,8 @@ body {
 }
 
 .services-list-white .item-text {
+  display: none;
   max-width: 635px;
-  height: 0px;
-  visibility: hidden;
 }
 
 /* -------- SERVICES -//- BLOCK RIGHT */
@@ -555,9 +559,8 @@ body {
 }
 
 .services-list-black .item-text {
+  display: none;
   transform: rotate(180deg);
-  width: 0px;
-  visibility: hidden;
 }
 
 /* -------- SERVICES -//- active */
@@ -578,8 +581,7 @@ body {
 }
 
 .services-list-white .services-item-active .item-text {
-  height: 100%;
-  visibility: visible;
+  display: block;
 }
 
 .services-list-black .services-item-active .item__title-wrapper {
@@ -592,9 +594,8 @@ body {
 }
 
 .services-list-black .services-item-active .item-text {
+  display: block;
   width: 240px;
-  height: 100%;
-  visibility: visible;
 }
 
 /* ----------- CONTACTS --------- */
