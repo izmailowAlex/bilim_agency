@@ -757,11 +757,6 @@ body {
 
 /* ----------- PORTFOLIO --------- */
 
-.portfolio .main {
-  /* overflow: hidden; */
-  /* z-index: 0; */
-}
-
 .portfolio-left {
   padding: 40px;
   width: 35%;
