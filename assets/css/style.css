@@ -800,7 +800,7 @@ body {
 .portfolio-slider {
   padding: 40px 20px 20px 20px;
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .portfolio-slider::-webkit-scrollbar {

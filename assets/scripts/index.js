@@ -3,7 +3,7 @@ const HEADER_BUTTON = document.querySelector(".header-menu");
 const LOGO = document.querySelector(".logo");
 const SERVICES_LIST = document.querySelectorAll(".services-item");
 const PORTFOLIO_SLIDER = document.querySelector(".portfolio-slider");
-const PORTFOLIO_SLIDER_LIST = PORTFOLIO_SLIDER.querySelector(".slider-list");
+const PORTFOLIO_SLIDER_LIST = PORTFOLIO_SLIDER?.querySelector(".slider-list");
 
 // ------ CLICK BURGER MENU ------ //
 
@@ -46,15 +46,19 @@ function addActiveItem(item) {
 
 // ------ ROLLING PORTFOLIO ------ //
 
-const HEIGHT_SLIDER_LIST = Math.abs(
-  window.getComputedStyle(PORTFOLIO_SLIDER_LIST).height.replace("px", "")
-);
+const HEIGHT_SLIDER_LIST =
+  PORTFOLIO_SLIDER_LIST !== undefined
+    ? Math.abs(
+        window.getComputedStyle(PORTFOLIO_SLIDER_LIST).height.replace("px", "")
+      )
+    : null;
 let intervalStep = 40;
 let isPaused = false;
 let percents = 0;
 const scroll = 1;
 
 function autoSlide() {
+  if (HEIGHT_SLIDER_LIST === null) return;
   setInterval(() => {
     if (
       !isPaused &&
@@ -67,7 +71,8 @@ function autoSlide() {
 }
 autoSlide();
 
-PORTFOLIO_SLIDER.addEventListener("scroll", () => setSliderPause());
+if (PORTFOLIO_SLIDER !== null)
+  PORTFOLIO_SLIDER.addEventListener("scroll", () => setSliderPause());
 
 function setSliderPause() {
   // console.log(PORTFOLIO_SLIDER.scrollTop);
