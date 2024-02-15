@@ -372,7 +372,7 @@ body {
 
 .block-right {
   margin-top: auto;
-  margin-bottom: 30px;
+  margin-bottom: auto;
   padding: 0 40px;
   width: 67%;
   display: flex;
