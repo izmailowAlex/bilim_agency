@@ -88,7 +88,9 @@ body {
 .about .menu-line::before,
 .about .menu-line::after,
 .contacts .menu-line::before,
-.contacts .menu-line::after {
+.contacts .menu-line::after,
+.portfolio2 .menu-line::before,
+.portfolio2 .menu-line::after {
   background-color: var(--color-white);
 }
 
@@ -129,7 +131,9 @@ body {
 .services .header-active .menu-line::before,
 .services .header-active .menu-line::after,
 .portfolio .header-active .menu-line::before,
-.portfolio .header-active .menu-line::after {
+.portfolio .header-active .menu-line::after,
+.portfolio2 .header-active .menu-line::before,
+.portfolio2 .header-active .menu-line::after {
   background-color: var(--color-white);
 }
 
@@ -184,7 +188,8 @@ body {
 }
 
 .services .header-logo,
-.portfolio .header-logo {
+.portfolio .header-logo,
+.portfolio2 .header-logo {
   position: absolute;
   top: 20px;
   right: 40px;
@@ -204,7 +209,8 @@ body {
 .about .logo-image,
 .services .logo-image,
 .contacts .logo-image,
-.portfolio .logo-image {
+.portfolio .logo-image,
+.portfolio2 .logo-image {
   width: 150px;
   height: 50px;
   transform: translateX(78%);
@@ -217,7 +223,8 @@ body {
   background-image: url(./../img/logo-desktop-red.png);
 }
 
-.contacts .logo-image {
+.contacts .logo-image,
+.portfolio2 .logo-image {
   background-image: url(./../img/logo-desktop-white.png);
 }
 
@@ -242,7 +249,8 @@ body {
 /* ----------- MAIN HOME --------- */
 
 .home .main,
-.contacts .main {
+.contacts .main,
+.portfolio2 .main {
   color: var(--color-white);
   background-color: var(--color-black);
 }
@@ -866,8 +874,10 @@ body {
 }
 
 .slider-item-text-wrapper {
+  text-decoration: none;
   width: 100%;
   height: 100%;
+  color: var(--color-white);
   display: flex;
   text-align: center;
   align-items: center;
@@ -875,6 +885,7 @@ body {
   position: relative;
   opacity: 1;
   transition: 1s;
+  cursor: pointer;
 }
 
 .slider-item-text {
@@ -884,6 +895,14 @@ body {
   opacity: 0;
   transition: 1s;
   z-index: 30;
+}
+
+/* ----------- PORTFOLIO 2 --------- */
+
+.portfolio2 .main {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (hover: hover) {
