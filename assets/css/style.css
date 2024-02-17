@@ -766,7 +766,7 @@ body {
 
 /* ----------- PORTFOLIO --------- */
 
-.portfolio-left {
+.portfolio-preview {
   padding: 40px;
   width: 35%;
   background: var(--color-white);
@@ -798,7 +798,7 @@ body {
   justify-content: end;
 }
 
-.portfolio-right {
+.portfolio-gallery {
   width: 65%;
   position: absolute;
   top: 0;
