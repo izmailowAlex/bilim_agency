@@ -290,4 +290,32 @@
     position: static;
     background-color: var(--color-black);
   }
+
+  .portfolio .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-preview {
+    padding: 80px 40px;
+    width: 100%;
+  }
+
+  .portfolio-text-wrapper {
+    width: 565px;
+  }
+
+  .portfolio__title {
+    font-size: 84px;
+    line-height: 92px;
+  }
+
+  .portfolio-name {
+    justify-content: center;
+  }
+
+  .portfolio-gallery {
+    position: static;
+    width: 100%;
+  }
 }
