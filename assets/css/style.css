@@ -619,10 +619,10 @@ body {
 
 .contacts .main {
   padding: 80px 40px 0px 40px;
-  z-index: 0;
   display: flex;
-  justify-content: center;
+  justify-content: inherit;
   align-items: center;
+  z-index: 0;
 }
 
 .contacts__title {
