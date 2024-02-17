@@ -430,7 +430,7 @@ body {
   grid-template-columns: 1fr 1fr;
   position: absolute;
   top: 132px;
-  left: 410px;
+  right: 500px;
   z-index: -10;
 }
 
