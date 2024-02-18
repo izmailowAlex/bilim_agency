@@ -303,7 +303,12 @@
   }
 
   .footer-sign {
+    width: 55%;
     justify-content: start;
+  }
+
+  .footer-company {
+    width: 45%;
   }
 
   .portfolio .main {
