@@ -1,3 +1,10 @@
+@media screen and (min-width: 1920px) {
+  .home .info-text {
+    bottom: 151px;
+    left: 1310px;
+  }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .home .info__title {
     font-size: 110px;
@@ -282,8 +289,8 @@
     align-items: start;
   }
 
-  .contacts-preview {
-    margin-left: -70px;
+  .contacts-info {
+    width: 55%;
   }
 
   .footer {
