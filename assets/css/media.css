@@ -7,22 +7,26 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .home .info__title {
-    font-size: 110px;
-    line-height: 110px;
+    font-size: 132px;
+    line-height: 130px;
   }
 
   .home .info__title2 {
-    font-size: 155px;
-    line-height: 147px;
+    font-size: 174px;
+    line-height: 167px;
   }
 
   .home .info-animation-text {
-    width: 380px;
-    height: 90px;
-    font-size: 110px;
+    width: 445px;
+    height: 102px;
+    font-size: 124px;
     line-height: 120px;
-    left: 338px;
-    bottom: 210px;
+    left: 390px;
+    bottom: 240px;
+  }
+
+  .home .info-text {
+    left: 965px;
   }
 
   .block-left-wrapper {
@@ -98,7 +102,7 @@
   .home .info-text {
     width: 140px;
     bottom: 176px;
-    right: 220px;
+    left: 370px;
   }
 
   .about .main {
