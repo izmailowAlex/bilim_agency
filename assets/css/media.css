@@ -3,6 +3,37 @@
     bottom: 151px;
     left: 1310px;
   }
+
+  .about-preview-wrapper {
+    width: 435px;
+  }
+
+  .about-preview__title1,
+  .about-preview__title2 {
+    font-size: 84px;
+    line-height: 94px;
+  }
+
+  .about-info__title {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .about-info-description {
+    width: 400px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .about-info-text-wrapper {
+    width: 94%;
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .services-preview {
+    right: 800px;
+  }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
@@ -29,7 +60,7 @@
     left: 965px;
   }
 
-  .block-left-wrapper {
+  .about-preview-wrapper {
     width: 360px;
   }
 }
@@ -109,7 +140,7 @@
     flex-direction: column;
   }
 
-  .block-left {
+  .about-preview {
     width: 100%;
     height: 350px;
     padding: 20px;
@@ -117,7 +148,7 @@
     align-items: end;
   }
 
-  .block-left-wrapper {
+  .about-preview-wrapper {
     width: 525px;
     position: static;
     display: flex;
@@ -125,37 +156,33 @@
     justify-content: end;
   }
 
-  .block-right {
-    width: 100%;
-    height: 100px;
-  }
-
-  .block-left__title2,
-  .block-left-name {
+  .about-preview__title2,
+  .about-preview-name {
     position: absolute;
   }
 
-  .block-left__title2 {
+  .about-preview__title2 {
     left: 130px;
   }
 
-  .block-left-name {
+  .about-preview-name {
     left: 510px;
     top: 285px;
   }
 
-  .block-right {
+  .about-info {
     margin-top: 0px;
     padding: 40px 20px;
     width: 100%;
+    height: 100px;
   }
 
-  .block-right__title {
+  .about-info__title {
     font-size: 54px;
     line-height: 94px;
   }
 
-  .block-right-text-wrapper {
+  .about-info-text-wrapper {
     margin-top: 40px;
     width: 88%;
     font-size: 23px;
@@ -171,7 +198,7 @@
   }
 
   .services__title {
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 30px;
     position: static;
     font-size: 84px;
@@ -182,6 +209,7 @@
     width: 330px;
     height: 50px;
     right: 92px;
+    top: 120px;
   }
 
   .preview__title {
