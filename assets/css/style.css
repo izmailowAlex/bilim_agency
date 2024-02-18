@@ -1,5 +1,15 @@
 @font-face {
   font-family: "Resist Sans";
+  src: local("Resist Sans Display Light"), local("Resist-Sans-Display-Light"),
+    url("./../fonts/ResistSansDisplay-Light.woff2") format("woff2"),
+    url("./../fonts/ResistSansDisplay-Light.woff") format("woff"),
+    url("./../fonts/ResistSansDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Resist Sans Regular";
   src: local("Resist Sans Display Regular"),
     local("Resist-Sans-Display-Regular"),
     url("./../fonts/ResistSansDisplay-Regular.woff2") format("woff2"),
@@ -28,6 +38,7 @@
   --color-pink: #ed1e79;
   --font-love: "LoveLight";
   --font-resist: "Resist Sans";
+  --font-resist-regular: "Resist Sans Regular";
   --font-intro: "Intro Demo";
 }
 
@@ -326,7 +337,7 @@ body {
 }
 
 .about-preview-wrapper {
-  width: 400px;
+  width: 340px;
   position: absolute;
   left: 40px;
   bottom: 50px;
@@ -337,8 +348,8 @@ body {
 .about-preview__title1,
 .about-preview__title2 {
   text-transform: uppercase;
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 67px;
+  line-height: 72px;
 }
 
 .about-preview__title1 {
@@ -368,10 +379,9 @@ body {
 }
 
 .about-info {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 180px;
   padding: 0 40px;
-  width: 67%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -388,8 +398,9 @@ body {
 }
 
 .about-info-description {
+  margin-top: 20px;
   width: 370px;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 30px;
   align-items: end;
   text-align: right;
@@ -398,12 +409,13 @@ body {
 .about-info-text-wrapper {
   margin-top: 40px;
   width: 85%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 }
 
 .about-info-text2 {
-  font-size: 24px;
+  font-family: var(--font-resist-regular);
+  font-size: 18px;
   line-height: 80px;
 }
 
