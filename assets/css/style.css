@@ -447,14 +447,14 @@ body {
 /* ----------- SERVICES --------- */
 
 .services .main {
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   z-index: 0;
 }
 
 .services__title {
-  position: absolute;
-  top: 190px;
-  left: 60px;
+  margin: 180px 0px 0px 40px;
   font-size: 84px;
   line-height: 96px;
 }
@@ -506,6 +506,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  bottom: 0;
   z-index: 0;
 }
 
