@@ -1,9 +1,13 @@
+const BODY = document.body;
 const HEADER = document.querySelector(".header");
 const HEADER_BUTTON = document.querySelector(".header-menu");
 const LOGO = document.querySelector(".logo");
 const SERVICES_LIST = document.querySelectorAll(".services-item");
 const PORTFOLIO_SLIDER = document.querySelector(".portfolio-slider");
 const PORTFOLIO_SLIDER_LIST = PORTFOLIO_SLIDER?.querySelector(".slider-list");
+const CONTACTS_BUTTON = document?.querySelector(".contacts-info__button");
+const POPUP = document?.querySelector(".popup");
+const POPUP_CLOSE = POPUP?.querySelector(".popup-close");
 
 // ------ CLICK BURGER MENU ------ //
 
@@ -82,4 +86,23 @@ function setSliderPause() {
 
 function setPausedFalse() {
   isPaused = false;
+}
+
+// ------ POPUP ------ //
+
+if (CONTACTS_BUTTON !== null) {
+  CONTACTS_BUTTON.addEventListener("click", () => showPopup());
+}
+
+console.log(POPUP_CLOSE);
+if (POPUP_CLOSE !== undefined) {
+  POPUP_CLOSE.addEventListener("click", () => closePopup());
+}
+
+function showPopup() {
+  POPUP.classList.add("show-popup");
+}
+
+function closePopup() {
+  POPUP.classList.remove("show-popup");
 }
