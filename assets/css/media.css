@@ -443,13 +443,11 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* transform: translateY(-100%); */
     z-index: 10;
   }
 
   .header-active .header-nav {
     opacity: 1;
-    /* transform: translateY(0%); */
     z-index: 100;
   }
 
