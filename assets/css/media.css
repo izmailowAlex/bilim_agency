@@ -342,7 +342,7 @@
   }
 
   .contacts .header {
-    background-color: var(--color-black);
+    background: var(--color-black);
   }
 
   .contacts .main {
@@ -408,6 +408,75 @@
   .portfolio-gallery {
     position: static;
     width: 100%;
+  }
+
+  .popup {
+    padding: 60px 20px 30px 20px;
+    width: 500px;
+    max-width: 500px;
+    height: 700px;
+    border: 2px solid var(--color-pink);
+    border-radius: 15px;
+    bottom: calc(50% - 350px);
+    left: calc(50% - 250px);
+  }
+
+  .popup-close {
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .close-line {
+    top: 20px;
+    right: 20px;
+  }
+
+  .close-line,
+  .close-line::before,
+  .close-line::after {
+    width: 25px;
+  }
+
+  .close-line::before,
+  .close-line::after {
+    height: 3px;
+  }
+
+  .popup-head {
+    align-items: center;
+  }
+
+  .popup__title {
+    font-size: 22px;
+    line-height: 48px;
+    align-items: center;
+  }
+
+  .popup-text {
+    width: 220px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form-input {
+    font-size: 18px;
+    line-height: 20px;
+    border-bottom: 2px solid var(--color-white-hidden);
+  }
+
+  .form__button {
+    margin: 40px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .popup-form label {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
@@ -617,5 +686,170 @@
   .about-info-text2 {
     font-size: 12px;
     line-height: 60px;
+  }
+
+  .contacts .header {
+    background: var(--color-black);
+  }
+
+  .contacts .main {
+    padding: 100px 20px 80px 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: start;
+    position: static;
+  }
+
+  .contacts__title {
+    position: static;
+    font-size: 39px;
+    line-height: 44px;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .contacts-preview {
+    width: 100%;
+  }
+
+  .contacts-preview-wrapper {
+    margin-top: -40px;
+    margin-left: -270px;
+    width: 415px;
+    height: 323px;
+  }
+
+  .contacts-address,
+  .contacts-number {
+    font-family: var(--font-intro);
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    left: 180px;
+  }
+
+  .contacts-address {
+    top: 115px;
+  }
+
+  .contacts-number {
+    top: 140px;
+  }
+
+  .contacts-image-ico {
+    top: 175px;
+    left: 225px;
+  }
+
+  .contacts-info {
+    width: 100%;
+  }
+
+  .contacts-info__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .contacts-info-text {
+    margin: 20px 0px 40px 0px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contacts-info__button {
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer {
+    padding: 20px;
+    width: 100%;
+    flex-direction: column-reverse;
+    background: var(--color-black);
+    position: static;
+  }
+
+  .footer-sign {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .footer-company {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .popup {
+    padding: 30px 20px 30px 20px;
+    width: 300px;
+    max-width: 300px;
+    height: 500px;
+    border: 2px solid var(--color-pink);
+    border-radius: 15px;
+    bottom: calc(50% - 250px);
+    left: calc(50% - 150px);
+  }
+
+  .popup-close {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .close-line {
+    top: 10px;
+    right: 10px;
+  }
+
+  .close-line,
+  .close-line::before,
+  .close-line::after {
+    width: 20px;
+  }
+
+  .close-line::before,
+  .close-line::after {
+    height: 2px;
+  }
+
+  .popup-head {
+    align-items: center;
+  }
+
+  .popup__title {
+    font-size: 18px;
+    line-height: 40px;
+    align-items: center;
+  }
+
+  .popup-text {
+    width: 180px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form-input {
+    font-size: 16px;
+    line-height: 18px;
+    border-bottom: 1px solid var(--color-white-hidden);
+  }
+
+  .form__button {
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .popup-form label {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
