@@ -483,11 +483,17 @@
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .header {
     padding: 25px 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50;
   }
 
   .header-menu {
     width: 25px;
     height: 25px;
+    position: relative;
   }
 
   .menu-line {
@@ -567,6 +573,10 @@
 
   .header-logo {
     top: 35px;
+  }
+
+  .header-active .overlay {
+    z-index: -1;
   }
 
   .home .logo-image {
@@ -851,5 +861,67 @@
   .popup-form label {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .portfolio .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .portfolio .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  } */
+
+  .portfolio-preview {
+    padding: 90px 20px 40px 20px;
+    width: 100%;
+  }
+
+  .portfolio-text-wrapper {
+    width: 100%;
+  }
+
+  .portfolio__pretitle {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .portfolio__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .portfolio-name {
+    margin-left: -180px;
+    font-size: 16px;
+    line-height: 18px;
+    justify-content: center;
+  }
+
+  .portfolio-gallery {
+    width: 100%;
+    position: static;
+    background: var(--color-black);
+  }
+
+  .logo {
+    /* position: fixed; */
+    left: calc(100% - 140px);
+  }
+
+  .slider-item:nth-child(4n) {
+    margin-top: -125px;
+  }
+
+  .full {
+    height: 250px;
+  }
+
+  .small {
+    height: 125px;
   }
 }
