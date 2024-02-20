@@ -8,6 +8,7 @@ const PORTFOLIO_SLIDER_LIST = PORTFOLIO_SLIDER?.querySelector(".slider-list");
 const CONTACTS_BUTTON = document?.querySelector(".contacts-info__button");
 const POPUP = document?.querySelector(".popup");
 const POPUP_CLOSE = POPUP?.querySelector(".popup-close");
+const OVERLAY = document?.querySelector(".overlay");
 
 // ------ CLICK BURGER MENU ------ //
 
@@ -101,8 +102,10 @@ if (POPUP_CLOSE !== undefined) {
 
 function showPopup() {
   POPUP.classList.add("show-popup");
+  OVERLAY.classList.add("overlay-active");
 }
 
 function closePopup() {
   POPUP.classList.remove("show-popup");
+  OVERLAY.classList.remove("overlay-active");
 }
