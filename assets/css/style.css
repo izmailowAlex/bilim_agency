@@ -220,16 +220,15 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
-  top: 20px;
   z-index: 10;
 }
 
 .services .header-logo,
 .portfolio .header-logo,
 .portfolio2 .header-logo {
-  position: absolute;
-  top: 20px;
-  right: 40px;
+  position: relative;
+  top: 10px;
+  right: 0px;
 }
 
 .logo-image {
@@ -293,9 +292,12 @@ body {
 }
 
 .home .main-info {
-  margin: auto 40px 40px 40px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 0px 40px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .home .info__title {
@@ -320,7 +322,7 @@ body {
   border-radius: 150%;
   position: absolute;
   left: 390px;
-  bottom: 230px;
+  bottom: 195px;
 }
 
 .home .info__title2 {
@@ -346,7 +348,7 @@ body {
   color: var(--color-white);
   position: absolute;
   left: 985px;
-  bottom: 215px;
+  bottom: 183px;
 }
 
 /* ----------- ABOUT --------- */
@@ -453,6 +455,14 @@ body {
   justify-content: space-between;
   overflow: hidden;
   z-index: 0;
+}
+
+.services .header-logo {
+  z-index: 0;
+}
+
+.services .header-active .header-logo {
+  z-index: 20;
 }
 
 .services__title {
@@ -751,7 +761,8 @@ body {
   line-height: 32px;
   border: none;
   border-radius: 10px;
-  background-color: var(--color-pink);
+  color: var(--color-black);
+  background: var(--color-pink);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -813,6 +824,14 @@ body {
 }
 
 /* ----------- PORTFOLIO --------- */
+
+.portfolio .header-logo {
+  z-index: 0;
+}
+
+.portfolio .header-active .header-logo {
+  z-index: 20;
+}
 
 .portfolio-preview {
   padding: 40px;
