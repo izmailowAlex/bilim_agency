@@ -642,9 +642,13 @@
     height: 43px;
   }
 
+  .home .main {
+    padding: 0px 20px;
+  }
+
   .home .main-info {
     margin-bottom: 40px;
-    padding: 0px 20px;
+    padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -657,8 +661,8 @@
   }
 
   .home .info__title2 {
-    font-size: 80px;
-    line-height: 76px;
+    font-size: 76px;
+    line-height: 73px;
     display: flex;
     flex-direction: column;
   }
@@ -673,11 +677,11 @@
   }
 
   .home .info-text {
-    width: 120px;
+    width: 105px;
     font-size: 15px;
     line-height: 18px;
-    left: 250px;
-    bottom: 87px;
+    left: 212px;
+    bottom: 84px;
   }
 
   .about .logo-image,
@@ -756,7 +760,7 @@
   }
 
   .contacts .main {
-    padding: 100px 20px 40px 20px;
+    padding: 100px 20px 30px 20px;
     height: auto;
     flex-direction: column;
     align-items: start;

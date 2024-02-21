@@ -95,7 +95,6 @@ if (CONTACTS_BUTTON !== null) {
   CONTACTS_BUTTON.addEventListener("click", () => showPopup());
 }
 
-console.log(POPUP_CLOSE);
 if (POPUP_CLOSE !== undefined) {
   POPUP_CLOSE.addEventListener("click", () => closePopup());
 }
