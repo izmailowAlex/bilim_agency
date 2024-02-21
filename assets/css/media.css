@@ -629,8 +629,12 @@
   .services .header-logo,
   .portfolio .header-logo,
   .portfolio2 .header-logo {
-    top: 0px;
+    top: -5px;
     right: 0px;
+  }
+
+  .header-active .header-logo {
+    display: none;
   }
 
   .home .logo-image {
@@ -672,7 +676,7 @@
     width: 120px;
     font-size: 15px;
     line-height: 18px;
-    left: 237px;
+    left: 250px;
     bottom: 87px;
   }
 
@@ -719,7 +723,7 @@
     line-height: 18px;
     position: absolute;
     top: 147px;
-    left: 206px;
+    left: 220px;
   }
 
   .about-info {
@@ -978,13 +982,13 @@
   .services .main {
     padding: 50px 0px 0px;
     height: auto;
-    justify-content: end;
-    top: auto;
+    justify-content: inherit;
+    position: static;
+    overflow: visible;
   }
 
   .services__title {
-    margin: 120px 0px 0px 20px;
-    margin-bottom: 30px;
+    margin: 120px 0px 20px 20px;
     position: static;
     font-size: 45px;
     line-height: 50px;
@@ -1079,7 +1083,7 @@
   }
 
   .services-list-black .services-item-active .item-text-wrapper {
-    padding: 15px 0px;
+    padding: 15px 20px;
   }
 
   .services-list-black .services-item-active .item-text {
