@@ -979,6 +979,10 @@
     height: 125px;
   }
 
+  .slider-item {
+    font-size: 22px;
+  }
+
   .services .main {
     padding: 50px 0px 0px;
     height: auto;
@@ -1092,5 +1096,16 @@
 
   .logo {
     display: none;
+  }
+
+  @media (active: active) {
+    .slider-item:active .slider-item-text-wrapper {
+      background: rgb(0, 0, 0, 0.5);
+    }
+
+    .slider-item:active .slider-item-text {
+      opacity: 1;
+      bottom: calc(50% - 20px);
+    }
   }
 }
