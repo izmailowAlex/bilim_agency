@@ -95,7 +95,8 @@ if (CONTACTS_BUTTON !== null) {
   CONTACTS_BUTTON.addEventListener("click", () => showPopup());
 }
 
-console.log(POPUP_CLOSE);
+OVERLAY.addEventListener("click", () => resetHeaderActive());
+
 if (POPUP_CLOSE !== undefined) {
   POPUP_CLOSE.addEventListener("click", () => closePopup());
 }
@@ -108,4 +109,11 @@ function showPopup() {
 function closePopup() {
   POPUP.classList.remove("show-popup");
   OVERLAY.classList.remove("overlay-active");
+}
+
+function resetHeaderActive() {
+  if (HEADER.classList.contains("header-active")) {
+    HEADER.classList.remove("header-active");
+  }
+  closePopup();
 }
