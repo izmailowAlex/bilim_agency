@@ -216,6 +216,27 @@ body {
   transition: all 0.8s ease 0s;
 }
 
+.overlay {
+  background: var(--color-black);
+}
+
+.header-active .overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  visibility: visible;
+  z-index: -1;
+}
+
+.overlay-active {
+  opacity: 0.8;
+  visibility: visible;
+  z-index: 60;
+}
+
 .header-logo {
   display: flex;
   overflow: hidden;
