@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bilim Agency Portfolio2</title>
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
 <body class="visible">
@@ -15,6 +17,7 @@
         <span class="menu-line"></span>
       </div>
       <nav class="header-nav">
+        <div class="nav-logo"><a class="logo-image" href="./index.html"></a></div>
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-item-link" href="./about.html">о компании</a></li>
           <li class="nav-item"><a class="nav-item-link" href="./portfolio.html">портфолио</a></li>
@@ -25,10 +28,55 @@
       <div class="header-logo"><a class="logo-image" href="./index.html"></a></div>
       <div class="overlay"></div>
     </header>
-    <section class="main"></section>
+    <section class="main">
+      <section class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./assets/img/image\ 19.png)">
+            <div class="swiper-content">
+              <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
+              <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image:url(./assets/img/image\ 19.png)">
+            <div class="swiper-content">
+              <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
+              <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image:url(./assets/img/image\ 19.png)">
+            <div class="swiper-content">
+              <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
+              <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image:url(./assets/img/image\ 19.png)">
+            <div class="swiper-content">
+              <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
+              <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </section>
+      <div class="portfolio2-text-wrapper">
+        <ul class="portfolio2-tags-list">
+          <li class="portfolio2-list-tag">#гастрономия</li>
+          <li class="portfolio2-list-tag">#брендинг</li>
+          <li class="portfolio2-list-tag">#логотип</li>
+        </ul>
+        <h1 class="portfolio2__title">Fenomeno</h1>
+        <p class="portfolio2-description">Не следует, однако забывать, что постоянный количественный рост и сфера нашей
+          активности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных
+          задач.<br /><br />Повседневная практика показывает, что рамки и место обучения кадров играет важную роль в
+          формировании модели развития. </p>
+      </div>
+    </section>
   </div>
 
-  <script src="./assets/scripts/index.js"></script>
+  <script src="./assets/scripts/jquery.min.js"></script>
+  <script src="./assets/scripts/index.js" type="module"></script>
 </body>
 
 </html>
