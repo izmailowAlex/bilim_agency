@@ -157,5 +157,5 @@ var sliderSelector = ".swiper-container",
       },
     },
   };
-// var mySwiper = new Swiper(sliderSelector, options);
-// mySwiper.init();
+var mySwiper = new Swiper(sliderSelector, options);
+mySwiper.init();
