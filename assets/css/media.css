@@ -40,7 +40,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .home .info__title {
     font-size: 132px;
     line-height: 130px;
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .header {
     padding: 12px 40px;
   }
@@ -210,7 +210,7 @@
   }
 
   .about-preview-wrapper {
-    width: 525px;
+    width: 560px;
     position: static;
     display: flex;
     flex-direction: column;
@@ -227,7 +227,7 @@
   }
 
   .about-preview-name {
-    left: 485px;
+    left: 500px;
     bottom: 50px;
   }
 
@@ -399,18 +399,16 @@
   }
 
   .services .main {
-    padding: 50px 0px 0px;
-    height: auto;
-    justify-content: end;
-    position: static;
+    padding: 150px 0px 0px;
+    justify-content: space-between;
   }
 
   .services__title {
     margin: 0px 40px 40px 40px;
-    position: static;
-    display: flex;
     font-size: 50px;
     line-height: 55px;
+    display: flex;
+    position: static;
   }
 
   .services-preview {
@@ -443,6 +441,10 @@
     line-height: 20px;
   }
 
+  .services-wrapper {
+    overflow: auto;
+  }
+
   .services-left {
     height: auto;
   }
@@ -463,7 +465,7 @@
   }
 
   .services-list-white .services-item-active .item-text-wrapper {
-    padding: 15px 0px;
+    padding: 15px 40px;
     border-top: 0px solid var(--color-black);
   }
 
@@ -505,7 +507,7 @@
   }
 
   .services-list-black .services-item-active .item-text-wrapper {
-    padding: 15px 0px;
+    padding: 15px 40px;
   }
 
   .services-list-black .services-item-active .item-text {
@@ -542,7 +544,7 @@
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     padding: 15px 20px;
     width: 100%;
@@ -554,13 +556,13 @@
 
   .home .header,
   .about .header,
-  .contacts .header {
+  .contacts .header,
+  .portfolio2 .header {
     background: var(--color-black);
   }
 
   .services .header,
-  .portfolio .header,
-  .portfolio2 .header {
+  .portfolio .header {
     background: var(--color-white);
   }
 
@@ -724,17 +726,15 @@
   }
 
   .about-preview__title2 {
-    position: absolute;
-    top: 137px;
     left: 65px;
+    bottom: 39px;
   }
 
   .about-preview-name {
     font-size: 13px;
     line-height: 18px;
-    position: absolute;
-    top: 147px;
     left: 220px;
+    bottom: 43px;
   }
 
   .about-info {
@@ -995,16 +995,14 @@
   }
 
   .services .main {
-    padding: 50px 0px 0px;
-    height: auto;
+    padding: 50px 0px 0px 0px;
     justify-content: inherit;
     position: static;
     overflow: visible;
   }
 
   .services__title {
-    margin: 120px 0px 20px 20px;
-    position: static;
+    margin: 120px 20px 20px 20px;
     font-size: 45px;
     line-height: 50px;
   }
@@ -1012,7 +1010,7 @@
   .services-preview {
     width: 330px;
     height: 50px;
-    right: -8px;
+    right: 10px;
     top: 91px;
   }
 
@@ -1033,11 +1031,6 @@
     height: 23px;
     font-size: 19px;
     line-height: 20px;
-  }
-
-  .services-left {
-    margin-top: 40px;
-    height: auto;
   }
 
   .services-list-white {
@@ -1062,10 +1055,6 @@
 
   .services-list-white .item-text {
     max-width: 100%;
-  }
-
-  .services-right {
-    position: static;
   }
 
   .services-list-black {
@@ -1107,6 +1096,18 @@
 
   .logo {
     display: none;
+  }
+
+  .portfolio2 .main {
+    padding: 80px 20px 50px 20px;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .swiper-slide {
+    height: 200px;
   }
 
   .portfolio2-text-wrapper {
