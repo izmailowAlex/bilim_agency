@@ -1,4 +1,3 @@
-const BODY = document.body;
 const HEADER = document.querySelector(".header");
 const HEADER_BUTTON = document.querySelector(".header-menu");
 const LOGO = document.querySelector(".logo");
@@ -30,23 +29,23 @@ function handleToggleHeaderButton() {
 
 // ------ CLICK SERVICES LISTS ------ //
 
-SERVICES_LIST.forEach((item) => {
-  item.addEventListener("click", () => {
-    cleanActiveItem();
-    addActiveItem(item);
+SERVICES_LIST.forEach((currentItem, i) => {
+  currentItem.addEventListener("click", () => {
+    removeActiveItem(i);
+    toggleActiveItem(currentItem);
   });
 });
 
-function cleanActiveItem() {
-  SERVICES_LIST.forEach((item) => {
-    if (item.classList.contains("services-item-active")) {
+function toggleActiveItem(currentItem) {
+  currentItem.classList.toggle("services-item-active");
+}
+
+function removeActiveItem(i) {
+  SERVICES_LIST.forEach((item, index) => {
+    if (i !== index && item.classList.contains("services-item-active")) {
       item.classList.remove("services-item-active");
     }
   });
-}
-
-function addActiveItem(item) {
-  item.classList.add("services-item-active");
 }
 
 // ------ ROLLING PORTFOLIO ------ //
@@ -60,7 +59,6 @@ const HEIGHT_SLIDER_LIST =
 let intervalStep = 40;
 let isPaused = false;
 let percents = 0;
-const scroll = 1;
 
 function autoSlide() {
   if (HEIGHT_SLIDER_LIST === null) return;
@@ -80,7 +78,6 @@ if (PORTFOLIO_SLIDER !== null)
   PORTFOLIO_SLIDER.addEventListener("scroll", () => setSliderPause());
 
 function setSliderPause() {
-  // console.log(PORTFOLIO_SLIDER.scrollTop);
   isPaused = true;
   setTimeout(setPausedFalse, 2000);
 }
