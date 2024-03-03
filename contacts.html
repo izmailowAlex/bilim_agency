@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
-<body class="visible">
+<body>
   <div class="app contacts">
     <header class="header">
       <div class="header-menu">
@@ -22,6 +22,7 @@
           <li class="nav-item"><a class="nav-item-link" href="./portfolio.html">портфолио</a></li>
           <li class="nav-item"><a class="nav-item-link" href="./services.html">услуги</a></li>
           <li class="nav-item"><a class="nav-item-link" href="./contacts.html">контакты</a></li>
+          <li class="nav-item"><a class="nav-item-link nav-item-link-insta" href="#"></a></li>
         </ul>
       </nav>
       <div class="header-logo"><a class="logo-image" href="./index.html"></a></div>
@@ -34,9 +35,6 @@
           <div class="contacts-preview-wrapper">
             <h3 class="contacts-address">hello@bilim.agency</h3>
             <h3 class="contacts-number">+7 812 407 17 76</h3>
-            <div class="contacts-image-ico">
-              <img class="contacts-image-ico__img" src="./assets/img/ico_insta.png" alt="icon_instagram" />
-            </div>
           </div>
         </div>
         <div class="contacts-info">
@@ -74,9 +72,13 @@
         <input class="form-input input-phone" type="phone" placeholder="Телефон">
         <input class="form-input input-text" type="text" placeholder="Комментарий">
         <button class="form__button" type="submit" disabled="false">Заказать проект</button>
-        <input class="form-checkbox" type="checkbox" name="" id="agree">
-        <label for="agree">Я даю согласие на обработку своих персональных данных и принимаю условия Пользовательского
-          соглашения</label>
+        <div class="form-checkbox-wrapper">
+          <input type="checkbox" name="" id="agree">
+          <label class="checkbox__input" for="agree"></label>
+          <label class="checkbox-text" for="agree">Я даю согласие на обработку своих персональных данных и принимаю
+            условия
+            Пользовательскогосоглашения</label>
+        </div>
       </form>
     </div>
   </div>
