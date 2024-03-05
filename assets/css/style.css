@@ -218,6 +218,8 @@ body {
   width: 49px;
   height: 49px;
   background-image: url(./../img/ico_insta.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
 }
 
@@ -340,8 +342,8 @@ body {
 }
 
 .info-animation-block {
-  width: 450px;
-  height: 100px;
+  width: 500px;
+  height: 115px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,43 +356,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   fill: transparent;
-}
-
-.info-animation-block svg ellipse {
-  stroke: var(--color-green);
-  stroke-width: 4px;
-  stroke-dasharray: 1060;
-  stroke-dashoffset: 1060;
-  cx: 221;
-  cy: 50;
-  rx: 207;
-  ry: 43;
-  animation: animate 2s 1s ease 1 forwards;
-}
-
-@keyframes animate {
-  0% {
-    stroke-dashoffset: 1060;
-  }
-  20% {
-    stroke: var(--color-green);
-  }
-  40% {
-    stroke: var(--color-pink);
-  }
-  60% {
-    stroke: var(--color-green);
-  }
-  70% {
-    stroke: var(--color-pink);
-  }
-  100% {
-    stroke: var(--color-green);
-    stroke-dashoffset: 0;
-  }
 }
 
 .home .info-animation-text {
@@ -554,7 +520,7 @@ body {
 }
 
 .services-preview {
-  width: 376px;
+  width: 390px;
   height: 62px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -579,17 +545,36 @@ body {
   text-align: right;
 }
 
+.preview-animation-block {
+  margin-left: -45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.preview-animation-block svg {
+  width: 300px;
+  height: 50px;
+}
+
+.preview-animation-block svg,
+.preview-animation-block svg ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: transparent;
+}
+
 .preview-slogan {
-  margin-left: -40px;
-  width: 240px;
   height: 40px;
   grid-row-start: 2;
   grid-row-end: 3;
   font-size: 28px;
-  line-height: 36px;
+  line-height: 47px;
   color: var(--color-pink);
-  border: 3px solid var(--color-green);
-  border-radius: 150%;
   text-align: center;
 }
 
@@ -640,11 +625,16 @@ body {
   padding: 15px 60px;
 }
 
+.item-text-wrapper-border {
+  border-top: 0px solid var(--color-black);
+}
+
 .item-text-wrapper {
   font-size: 16px;
   line-height: 23px;
+  transform: translateX(-100%);
+  transition: 1s;
   opacity: 0;
-  transition: 0.5s;
 }
 
 .services-list-white .item-text {
@@ -701,10 +691,16 @@ body {
   writing-mode: vertical-rl;
 }
 
+.services-list-black .item-text-wrapper-border {
+  display: flex;
+  overflow: hidden;
+}
+
 .services-list-black .item-text-wrapper {
   display: flex;
+  transform: translateX(100%);
+  transition: 1s;
   opacity: 0;
-  transition: 0.5s;
 }
 
 .services-list-black .item-text {
@@ -722,10 +718,14 @@ body {
   color: var(--color-pink);
 }
 
-.services-list-white .services-item-active .item-text-wrapper {
-  display: block;
+.services-list-white .services-item-active .item-text-wrapper-border {
   border-top: 2px solid var(--color-black);
+}
+
+.services-list-white .services-item-active .item-text-wrapper {
   padding: 25px 70px 25px 70px;
+  display: block;
+  transform: translateX(0%);
   opacity: 1;
 }
 
@@ -739,6 +739,7 @@ body {
 
 .services-list-black .services-item-active .item-text-wrapper {
   padding: 35px 20px 95px 20px;
+  transform: translateX(0%);
   opacity: 1;
 }
 
@@ -1228,6 +1229,7 @@ body {
   border-radius: 10px;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 .swiper-slide .swiper-content {
   position: absolute;

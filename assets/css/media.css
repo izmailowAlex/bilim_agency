@@ -82,6 +82,11 @@
     line-height: 120px;
   }
 
+  .info-animation-block {
+    width: 479px;
+    height: 112px;
+  }
+
   .home .info__title2 {
     font-size: 130px;
     line-height: 140px;
@@ -187,44 +192,16 @@
   }
 
   .info-animation-block {
-    width: 346px;
-    height: 87px;
+    width: 334px;
+    height: 78px;
   }
 
   .info-animation-block svg ellipse {
-    stroke-width: 4px;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-    cx: 170;
-    cy: 45;
-    rx: 163;
-    ry: 30;
-  }
-
-  @keyframes animate {
-    0% {
-      stroke-dashoffset: 800;
-    }
-    20% {
-      stroke: var(--color-green);
-    }
-    40% {
-      stroke: var(--color-pink);
-    }
-    60% {
-      stroke: var(--color-green);
-    }
-    70% {
-      stroke: var(--color-pink);
-    }
-    100% {
-      stroke: var(--color-green);
-      stroke-dashoffset: 0;
-    }
+    stroke-width: 3px;
   }
 
   .home .info-animation-text {
-    font-size: 88px;
+    font-size: 83px;
     line-height: 96px;
   }
 
@@ -305,8 +282,8 @@
   .about-info-text-wrapper {
     margin-top: 30px;
     width: 96%;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 27px;
   }
 
   .about-info-text2 {
@@ -481,7 +458,7 @@
   .services-preview {
     width: 330px;
     height: 50px;
-    right: 0px;
+    right: 45px;
     top: 91px;
   }
 
@@ -495,17 +472,30 @@
   }
 
   .preview-text {
-    margin-right: 50px;
     font-size: 12px;
     line-height: 14px;
   }
 
+  .preview-animation-block {
+    width: 191px;
+    height: 45px;
+  }
+
+  .preview-animation-block svg {
+    width: 234px;
+    height: 35px;
+  }
+
+  .preview-animation-block svg,
+  .preview-animation-block svg ellipse {
+    top: 4px;
+  }
+
   .preview-slogan {
-    margin-left: -55px;
     width: 165px;
-    height: 23px;
+    height: 44px;
     font-size: 19px;
-    line-height: 20px;
+    line-height: 40px;
   }
 
   .services-left {
@@ -527,13 +517,18 @@
     font-size: 20px;
   }
 
+  .services-list-white .services-item-active .item-text-wrapper-border {
+    border-top: 0px solid var(--color-black);
+  }
+
   .services-list-white .services-item-active .item-text-wrapper {
     padding: 15px 40px;
+    font-size: 14px;
     border-top: 0px solid var(--color-black);
   }
 
   .services-list-white .item-text {
-    max-width: 88%;
+    max-width: 800px;
   }
 
   .services-right {
@@ -571,10 +566,16 @@
 
   .services-list-black .services-item-active .item-text-wrapper {
     padding: 15px 40px;
+    font-size: 14px;
+  }
+
+  .services-list-black .item-text-wrapper {
+    transform: translateX(-100%);
   }
 
   .services-list-black .services-item-active .item-text {
     width: 100%;
+    max-width: 800px;
   }
 
   .logo {
@@ -593,7 +594,7 @@
   }
 
   .portfolio2__title {
-    margin: 40px 0 10px 0;
+    margin: 80px 0 10px 0;
     grid-row-start: auto;
     font-size: 97px;
     line-height: 100px;
@@ -631,38 +632,6 @@
   .info-animation-block {
     width: 275px;
     height: 60px;
-  }
-
-  .info-animation-block svg ellipse {
-    stroke-width: 3px;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-    cx: 140;
-    cy: 28;
-    rx: 125;
-    ry: 25;
-  }
-
-  @keyframes animate {
-    0% {
-      stroke-dashoffset: 800;
-    }
-    20% {
-      stroke: var(--color-green);
-    }
-    40% {
-      stroke: var(--color-pink);
-    }
-    60% {
-      stroke: var(--color-green);
-    }
-    70% {
-      stroke: var(--color-pink);
-    }
-    100% {
-      stroke: var(--color-green);
-      stroke-dashoffset: 0;
-    }
   }
 
   .home .info-animation-text {
@@ -752,6 +721,11 @@
     padding: 80px 0px 0px;
   }
 
+  .services-list-white .item-text,
+  .services-list-black .services-item-active .item-text {
+    max-width: 600px;
+  }
+
   .portfolio__pretitle {
     margin-top: 0px;
     font-size: 38px;
@@ -778,7 +752,7 @@
   }
 
   .portfolio2__title {
-    margin: 30px 0 10px 0;
+    margin: 70px 0 10px 0;
     font-size: 97px;
     line-height: 107px;
   }
@@ -914,46 +888,13 @@
 
   .info-animation-block {
     width: 230px;
-    height: 54px;
-  }
-
-  .info-animation-block svg ellipse {
-    stroke-width: 2px;
-    stroke-dasharray: 620;
-    stroke-dashoffset: 620;
-    cx: 113;
-    cy: 30;
-    rx: 106;
-    ry: 20;
-  }
-
-  @keyframes animate {
-    0% {
-      stroke-dashoffset: 620;
-    }
-    20% {
-      stroke: var(--color-green);
-    }
-    40% {
-      stroke: var(--color-pink);
-    }
-    60% {
-      stroke: var(--color-green);
-    }
-    70% {
-      stroke: var(--color-pink);
-    }
-    100% {
-      stroke: var(--color-green);
-      stroke-dashoffset: 0;
-    }
+    height: 60px;
   }
 
   .home .info-animation-text {
     width: 232px;
-    height: 50px;
     font-size: 62px;
-    line-height: 56px;
+    line-height: 52px;
   }
 
   .home .info__title2 {
@@ -995,7 +936,7 @@
 
   .about-preview__title1,
   .about-preview__title2 {
-    width: 210px;
+    width: 230px;
     font-size: 28px;
     line-height: 32px;
   }
@@ -1072,7 +1013,7 @@
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    left: 180px;
+    left: 110px;
   }
 
   .contacts-address {
@@ -1142,7 +1083,7 @@
 
   .popup {
     padding: 30px 20px 30px 20px;
-    left: calc(50% - 170px);
+    left: calc(50% - 175px);
   }
 
   .popup-close {
@@ -1278,7 +1219,6 @@
 
   .services-preview {
     width: 330px;
-    height: 50px;
     right: 10px;
     top: 70px;
   }
@@ -1294,10 +1234,12 @@
     line-height: 14px;
   }
 
+  .preview-animation-block {
+    height: 41px;
+  }
+
   .preview-slogan {
-    margin-left: -55px;
-    width: 165px;
-    height: 23px;
+    height: 20px;
     font-size: 19px;
     line-height: 20px;
   }
@@ -1319,11 +1261,14 @@
 
   .services-list-white .services-item-active .item-text-wrapper {
     padding: 15px 20px;
+    font-size: 12px;
+    line-height: 18px;
     border-top: 0px solid var(--color-black);
   }
 
   .services-list-white .item-text {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
   }
 
   .services-list-black {
@@ -1357,6 +1302,8 @@
 
   .services-list-black .services-item-active .item-text-wrapper {
     padding: 15px 20px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .services-list-black .services-item-active .item-text {
@@ -1391,7 +1338,7 @@
   }
 
   .portfolio2__title {
-    margin: 20px 0 10px 0;
+    margin: 60px 0 10px 0;
     grid-row-start: auto;
     font-size: 42px;
     line-height: 48px;
