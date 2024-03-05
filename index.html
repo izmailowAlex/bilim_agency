@@ -7,6 +7,7 @@
   <title>Bilim Agency Main</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <span class="menu-line"></span>
       </div>
       <nav class="header-nav">
-        <div class="nav-logo"><a class="logo-image" href="./index.html"></a></div>
+        <div class="nav-logo"><a class="logo-image" href="/"></a></div>
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-item-link" href="./about.html">о компании</a></li>
           <li class="nav-item"><a class="nav-item-link" href="./portfolio.html">портфолио</a></li>
@@ -30,20 +31,57 @@
     </header>
     <section class="main">
       <div class="main-info">
-        <h1 class="info__title">IT'S TIME NOW</h1>
+        <h1 class="info__title animate__animated animate__fadeInUp">IT'S TIME NOW</h1>
         <div class="info-animation-block">
-          <svg>
-            <ellipse></ellipse>
+          <svg id="brandCircle" viewBox="0 0 442 97"
+            class="absolute h-20 lg:h-44 -top-3 left-32 md:left-32 lg:left-80 visible">
+            <g class="drawnLine" fill="none" fill-rule="evenodd" stroke="#ceff00" stroke-width="10">
+              <ellipse class="drawnLine" stroke-width="4" cx="221" cy="50" rx="207" ry="43"></ellipse>
+            </g>
           </svg>
-          <h3 class="info-animation-text">welcome to</h3>
+          <h3 class="leading-headline info-animation-text">welcome to</h3>
         </div>
-        <h1 class="info__title2"><span>BILIM.</span><span>AGENCY</span></h1>
-        <h3 class="info-text">From science to branding ©</h3>
+        <h1 class="info__title2 animate__animated animate__fadeInUp"><span>BILIM.</span><span>AGENCY</span></h1>
+        <h3 class="info-text animate__animated animate__fadeInUp">From science to branding ©</h3>
       </div>
     </section>
   </div>
-
   <script src="./assets/scripts/index.js"></script>
+  <script src="https://focuslab.agency/js/site.js?id=0814dee4e96e55ab39146fb08ef9c681"></script>
+  <script>
+    var textWrapper = document.querySelector('.leading-headline');
+    var svgPath = document.querySelectorAll('.path');
+    // If our heading has fewer than 25 characters, we'll animate per letter, otherwise we'll animate per word
+    var pattern = textWrapper.textContent.length > 15 ? new RegExp(/\S+/, 'g') : new RegExp(/\S/, 'g')
+    textWrapper.innerHTML = textWrapper.textContent.replace(pattern, "<span class='word'>$&</span>");
+    var tl = anime.timeline({ loop: false });
+
+    tl.add({
+      targets: '.leading-headline .word',
+      translateX: [40, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1200,
+      delay: (el, i) => 1000 + 70 * i,
+      begin: function () {
+        textWrapper.classList.add('visible');
+      }
+    });
+
+    tl.add({
+      targets: '#brandCircle .drawnLine ellipse',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInSine',
+      duration: 1000,
+      direction: 'normal',
+      loop: false,
+      delay: function (el, i) { return 0 },
+      begin: function () {
+        var circle = document.getElementById('brandCircle');
+        circle.classList.add('visible');
+      }
+    }, '-=700');</script>
 </body>
 
 </html>
