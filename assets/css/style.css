@@ -307,7 +307,7 @@ body {
 .main {
   width: 100%;
   flex: 1 1;
-  height: auto;
+  /* height: auto; */
   user-select: none;
   display: flex;
 }
@@ -322,13 +322,11 @@ body {
 }
 
 .home .main {
-  padding: 30px 0;
+  padding: 30px 40px;
 }
 
 .home .main-info {
   margin-top: auto;
-  margin-bottom: 20px;
-  padding: 0px 40px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -410,6 +408,7 @@ body {
 }
 
 .about-preview-wrapper {
+  margin-top: auto;
   width: 345px;
   position: absolute;
   left: 40px;
@@ -482,6 +481,9 @@ body {
 .about-info-text-wrapper {
   margin-top: 40px;
   width: 85%;
+}
+
+.about-info-text {
   font-size: 16px;
   line-height: 26px;
 }
@@ -633,7 +635,6 @@ body {
   font-size: 16px;
   line-height: 23px;
   transform: translateX(-100%);
-  transition: 1s;
   opacity: 0;
 }
 
@@ -699,7 +700,6 @@ body {
 .services-list-black .item-text-wrapper {
   display: flex;
   transform: translateX(100%);
-  transition: 1s;
   opacity: 0;
 }
 
@@ -725,7 +725,7 @@ body {
 .services-list-white .services-item-active .item-text-wrapper {
   padding: 25px 70px 25px 70px;
   display: block;
-  transform: translateX(0%);
+  animation: showTextFromLeftToRight 1s 0.2s ease forwards;
   opacity: 1;
 }
 
@@ -739,13 +739,31 @@ body {
 
 .services-list-black .services-item-active .item-text-wrapper {
   padding: 35px 20px 95px 20px;
-  transform: translateX(0%);
+  animation: showTextFromRightToLeft 1s 0.2s ease forwards;
   opacity: 1;
 }
 
 .services-list-black .services-item-active .item-text {
   display: block;
   width: 240px;
+}
+
+@keyframes showTextFromLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showTextFromRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 /* ----------- CONTACTS --------- */
@@ -1061,12 +1079,12 @@ body {
 }
 
 .portfolio-preview {
+  margin-top: auto;
   padding: 40px;
   width: 35%;
   background: var(--color-white);
   display: flex;
   flex-direction: column;
-  justify-content: end;
 }
 
 .portfolio-text-wrapper {
@@ -1297,7 +1315,7 @@ body {
 }
 
 .portfolio2-text-wrapper {
-  margin-top: 40px;
+  padding-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
